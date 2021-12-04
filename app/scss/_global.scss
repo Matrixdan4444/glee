@@ -10,9 +10,19 @@ body {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1190px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
+}
+
+.container--big {
+    max-width: 1790px;
+}
+
+.title {
+    font-size: 36px;
+    @extend %dmsans-700;
+    color: #191919;
 }
 
 
