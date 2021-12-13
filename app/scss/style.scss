@@ -100,6 +100,24 @@
     align-items: center;
 }
 
+.top {
+    &__container {
+        background-color: #edf1f4;
+        padding: 35px 0 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        @extend %rubik-400;
+        font-size: 36px;
+        line-height: 24px;
+        color: #222933;
+        margin-bottom: 8px;
+    }
+}
+
 .footer-top {
     padding: 100px 0 75px;
     border-bottom: 1px solid #dae4e9;
@@ -602,8 +620,6 @@ ul.products__nav-menu {
         text-align: left;
     }
 
-
-
     &__item-link {
         @extend %dmsans-700;
         font-size: 16px;
@@ -668,7 +684,7 @@ ul.products__nav-menu {
     }
 
     &__item-date {
-        padding-right: 30px; 
+        padding-right: 30px;
     }
 
     &__item-author {
@@ -687,61 +703,88 @@ ul.products__nav-menu {
         justify-content: space-around;
         align-items: center;
     }
+
+    &__login {
+        padding: 80px 0 90px;
+        margin: 0;
+    }
 }
 
+.modal {
+    padding: 115px 0 120px;
+    max-width: 470px;
+    margin: 0 auto;
 
+    &__label {
+        display: block;
+        margin-bottom: 25px;
+        @extend %rubik-400;
+        font-size: 14px;
+        color: #436372;
+    }
 
+    &__input {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #f6f6f6;
+        margin-top: 4px;
+        height: 55px;
+        padding: 0 15px;
+    }
 
+    &__btn {
+        display: block;
+        background-color: $accent;
+        padding: 14px 0;
+        border: none;
+        @extend %rubik-500;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 35px;
+    }
 
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f6f6f6;
+        margin-bottom: 30px;
+    }
 
+    &__error {
+        font-size: 14px;
+        @extend %rubik-400;
+        color: #436372;
+    }
 
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    &__register-text {
+        font-size: 14px;
+        @extend %rubik-400;
+        color: #436372;
+        margin-bottom: 20px;
+    }
 
+    &__footer-btn {
+        display: block;
+        background-color: #fff;
+        padding: 14px 0;
+        border: 1px solid $accent;
+        @extend %rubik-500;
+        font-size: 18px;
+        color: #243f4d;
+        cursor: pointer;
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 @import "media";
