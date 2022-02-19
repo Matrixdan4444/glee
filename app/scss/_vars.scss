@@ -9,6 +9,7 @@ $bg: #e8e4df;
     font-family: 'DMSans-Regular', sans-serif;
     font-weight: 400;
 }
+
 %dmsans-500 {
     font-family: 'DMSans-Medium', sans-serif;
     font-weight: 500;
@@ -34,9 +35,14 @@ $bg: #e8e4df;
     font-weight: 500;
 }
 
+%rubik-700 {
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
+
 %btn {
     background-color: #a3bbc8;
-    @extend %rubik-500;
+    @extend %rubik-400;
     font-size: 14px;
     line-height: 21px;
     color: #fff;

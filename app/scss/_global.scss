@@ -25,4 +25,27 @@ body {
     color: #191919;
 }
 
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #737980;
+        position: relative;
+        
+    }
+
+    .breadcrumbs__link span {
+        margin-right: 4px;
+    }
+
+}
+
 
