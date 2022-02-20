@@ -347,11 +347,11 @@
     }
 }
 
-.contact {
+.contacts {
     position: relative;
 }
 
-.contact::before {
+.contacts::before {
     content: "";
     background-image: url("../images/icons/hours.png");
     width: 52px;
@@ -1912,6 +1912,252 @@ ul.products__nav-menu {
 #map {
     width: 500px;
     height: 335px;
+}
+
+.about {
+    padding-top: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+    }
+
+    &__img {
+        width: 570px;
+        height: 675px;
+        object-fit: cover;
+        margin-right: 50px;
+    }
+
+    &__item {
+        max-width: 555px;
+        padding-top: 125px;
+    }
+
+    &__num-box {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__item-num {
+        @extend %rubik-700;
+        font-size: 140px;
+        color: $accent;
+        margin-right: 30px;
+    }
+
+    .about__item-achieve {
+        margin-top: -22px;
+        @extend %rubik-400;
+        color: $title;
+    }
+
+    &__item-title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $title;
+        margin-bottom: 40px;
+    }
+
+    &__item-text {
+        @extend %rubik-400;
+        color: $title;
+        padding-bottom: 63px;
+    }
+
+    &__bottom {
+        display: flex;
+        padding-top: 25px;
+        border-top: 2px solid #e6eaf0;
+        justify-content: space-between;
+        max-width: 530px;
+    }
+
+    &__bottom-item {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__bottom-img {
+        width: 36px;
+        height: 38px;
+    }
+
+    &__bottom-img--revenue {
+        width: 43px;
+        height: 39px;
+    }
+
+    &__bottom--img--awards {
+        width: 42px;
+        height: 40px;
+    }
+
+    &__bottom-item-text {
+        padding-left: 20px;
+    }
+
+    &__bottom-title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $title;
+    }
+
+    &__bottom-text {
+        @extend %dmsans-700;
+        color: #4c4c4c;
+    }
+
+    &__bottom-item--projects,
+    &__bottom-item--revenue {
+        border-right: 1px solid #e6eaf0;
+        padding-right: 20px;
+    }
+}
+
+.advantages {
+    background-color: #fcd7b6;
+    padding: 85px 0 80px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $title;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: $title;
+    }
+}
+
+.team {
+    padding-top: 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 305px;
+        margin-right: 100px;
+    }
+
+    &__info-title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $title;
+        margin-bottom: 25px;
+    }
+
+    &__info-text {
+        @extend %rubik-400;
+        color: $title;
+        margin-bottom: 40px;
+    }
+
+    &__info-link {
+        @extend %btn;
+        @extend %poppins-700;
+        font-size: 15px;
+        padding: 18px 60px 15px 19px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    &__info-link::after {
+        content: "";
+        background-image: url("../images/slider/arrow.png");
+        position: absolute;
+        top: 23px;
+        right: 19px;
+        width: 22px;
+        height: 9px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px 30px;
+    }
+
+    &__worker {
+        max-width: 325px;
+        height: 110px;
+        background-color: #fff;
+        margin-top: -53px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 6px 57px 0px rgb(37 37 37 / 5%);
+    }
+
+    &__name-box {
+        margin-right: 50px;
+    }
+
+    &__name {
+        @extend %dmsans-700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+    }
+
+    &__post {
+        @extend %rubik-400;
+        color: #61637b;
+    }
+
+    &__social-link {
+        width: 40px;
+        height: 40px;
+        background-color: #f6f6f6;
+        border-radius: 50%;
+        margin-right: 7px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social-link--inst::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/about/icon/inst.svg);
+        width: 17px;
+        height: 17px;
+    }
+
+    &__social-link--gogle::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/about/icon/google.svg);
+        width: 23px;
+        height: 14px;
+    }
 }
 
 
