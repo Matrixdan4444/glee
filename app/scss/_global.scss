@@ -28,7 +28,7 @@ body {
 .breadcrumbs {
     display: flex;
     justify-content: center;
-    
+
     &__list {
         display: flex;
     }
@@ -39,7 +39,7 @@ body {
         line-height: 24px;
         color: #737980;
         position: relative;
-        
+
     }
 
     .breadcrumbs__link span {
@@ -48,4 +48,8 @@ body {
 
 }
 
-
+@media (max-width: 560px) {
+    .title {
+        font-size: 28px;
+    }
+}
