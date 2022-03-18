@@ -5,6 +5,14 @@ $(function(){
 
     })
 
+    $('.shop__filter-btn').on('click', function () {
+        $('.shop__filters').slideToggle();
+    });
+
+    $('.blog__filter-btn').on('click', function () {
+        $('.blog-page__aside').slideToggle();
+    });
+
     $('.product-tabs__top-item').on('click', function (e) {
         e.preventDefault();
         $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -28,6 +36,15 @@ $(function(){
         asNavFor: ".product-slide__thumb",
         draggable: false,
         arrows: false,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    draggable: true,
+                }
+            }
+        ]
     }),
 
     $('.product-list__filter-btn').on('click', function() {
@@ -37,10 +54,12 @@ $(function(){
 
     $('.button-list').on('click', function () {
         $('.products-item').addClass('products-item--list');
+        $('.product-list__items').addClass('product-list__nogrid');
     });
 
     $('.button-grid').on('click', function () {
         $('.products-item').removeClass('products-item--list');
+        $('.product-list__items').removeClass('product-list__nogrid');
     });
 
     $('.select-style, .product-one__num').styler();
